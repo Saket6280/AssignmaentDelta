@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AddStudentActivity">
+
+    <include layout="@layout/toolbar2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/toolbar2"
+
+        >
+
+
+    <EditText
+        android:id="@+id/et_addstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="StudentName"
+        android:layout_below="@+id/tv_toolbar2"
+        android:padding="20dp"
+        android:background="@drawable/input_field_border"/>
+
+    <EditText
+        android:id="@+id/et_addclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class"
+        android:layout_below="@id/et_addstudent"
+        android:inputType="number"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_field_border"/>
+
+    <EditText
+        android:id="@+id/et_addroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll No."
+        android:inputType="number"
+        android:layout_below="@+id/et_addclass"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_field_border"/>
+
+    <Button
+        android:id="@+id/btn_submitstudent"
+        android:layout_below="@+id/et_addroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:layout_centerInParent="true"
+        android:background="@drawable/addstudent_background"
+        android:layout_marginTop="25dp"
+        android:text="SUBMIT" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
