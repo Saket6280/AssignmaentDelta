@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgleft"
+        android:src="@drawable/back_arrow"
+        android:layout_marginLeft="@dimen/ib_otp1"
+        android:layout_marginTop="@dimen/ib_otp2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_otp"
+        android:text="@string/otp_verification"
+        android:layout_marginLeft="@dimen/tv_otp1"
+        android:textSize="@dimen/tv_otp2"
+        android:layout_below="@+id/imgleft"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_enterotp"
+        android:text="@string/verificationCode"
+        android:layout_below="@+id/tv_otp"
+        android:layout_marginLeft="@dimen/tv_otp4"
+        android:layout_marginTop="@dimen/tv_otp5"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:layout_width="@dimen/et_otp1"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_otp1"
+        android:layout_below="@+id/tv_enterotp"
+        android:layout_marginLeft="@dimen/edit_margin"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginTop="@dimen/et_otp2"
+        />
+    <EditText
+        android:layout_width="@dimen/et_otp3"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_otp2"
+        android:layout_below="@+id/tv_enterotp"
+        android:layout_marginLeft="@dimen/et_otp5"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginTop="@dimen/et_otp6"/>
+    <EditText
+        android:layout_width="@dimen/et_otp7"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_otp3"
+        android:layout_below="@+id/tv_enterotp"
+        android:layout_marginLeft="@dimen/et_otp8"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/et_otp9"/>
+    <EditText
+        android:layout_width="@dimen/et_otp10"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_otp4"
+        android:layout_below="@+id/tv_enterotp"
+        android:layout_marginLeft="280dp"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginTop="@dimen/et_otp11"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend"
+        android:id="@+id/btn_resend"
+        android:layout_below="@+id/et_otp1"
+        android:layout_marginLeft="@dimen/et_otp12"
+        android:layout_marginTop="@dimen/et_otp13"
+        android:ems="8"
+        android:background="@color/GreyColor"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        android:layout_below="@+id/et_otp3"
+        android:ems="8"
+        android:layout_marginTop="@dimen/et_otp14"
+        android:layout_marginLeft="@dimen/et_otp15"
+        android:textColor="@color/WhiteColor"
+        android:background="@drawable/button_selector" />
+
+
+
+</RelativeLayout>

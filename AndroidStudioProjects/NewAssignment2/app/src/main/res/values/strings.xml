@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NewAssignment2</string>
+    <string name="title">Assignment-2</string>
+    <string name="login_info">Log into your \naccount</string>
+    <string name="login_register1">Don\'t have account?Register</string>
+    <string name="login_register">I agree to the Term and Condition</string>
+    <string name="login_snackbar1">Please enter email</string>
+    <string name="login_snackbar2">Please enter pass</string>
+    <string name="login_snackbar4">Please Read Term and Condition</string>
+    <string name="login_snackbar3">Please enter Full Name</string>
+    <string name="login_action1">Action</string>
+    <string name="login_action2">Action</string>
+    <string name="login_action3">Action</string>
+    <string name="login_action4">Action</string>
+    <string name="please_provide_your_basic_information">Please provide your basic information</string>
+    <string name="welcome">Welcome,</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="toast_otp1">Otp has been send</string>
+    <string name="toast_otp2">please fill all the fields</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verificationCode">Enter the verification code \n sent to your number via sms</string>
+    <string name="login_toast">valid email address</string>
+    <string name="login_toast2">Incorrect email or Password</string>
+    <string name="otp_toast">Otp has been sent again</string>
+    <string name="otp_toast2">Wrong Otp</string>
+    <string name="register_toast">Sign In With Different Account?</string>
+    <string name="register_toast2">valid email address</string>
+    <string name="register_toast3">Incorrect email or Password</string>
+    <string name="button_login">Log In</string>
+    <string name="user_id">Email</string>
+    <string name="continue1">Continue</string>
+
+
+
+    <string name="register_1">Sign In With Different Account?</string>
+    <string name="i_agree_to_the_term_and_conditions">I agree to the term and conditions</string>
+
+</resources>

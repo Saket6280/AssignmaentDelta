@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.LogInActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_basic_info"
+        android:text="@string/login_info"
+        android:textSize="@dimen/tv_login"
+        android:layout_marginTop="@dimen/tv_login1" />
+
+
+    <EditText
+        android:id="@+id/et_user_id"
+        android:layout_below="@+id/tv_basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_login3"
+        android:inputType="text"
+        android:hint="@string/user_id" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_user_id"
+        android:id="@+id/etGPassword"
+        app:passwordToggleEnabled="true">
+
+
+    <EditText
+        android:id="@+id/et_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_login4"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/assi_eye"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/etGPassword"
+        android:layout_marginTop="@dimen/tv_login5"
+        android:text="@string/button_login"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/WhiteColor"/>
+
+
+    <TextView
+        android:id="@+id/tv_span_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textSize="@dimen/tv_login6" />
+
+
+</RelativeLayout>

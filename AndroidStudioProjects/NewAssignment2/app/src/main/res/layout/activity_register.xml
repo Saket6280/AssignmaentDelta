@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".activity.RegisterActivity">
+
+
+
+
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ib_signup1"
+                android:layout_marginTop="@dimen/ib_signup2"
+                android:src="@drawable/back_arrow" />
+
+
+
+            <TextView
+                android:id="@+id/tv_welcome"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_register_new"
+                android:layout_below="@+id/ib_back"
+                android:layout_marginLeft="@dimen/tv_signup1"
+                android:text="@string/welcome"
+                android:textSize="@dimen/tv_signup3"
+                />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_welcome"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/tv_signup4"
+                android:text="@string/please_provide_your_basic_information"
+                android:textSize="@dimen/tv_signup5" />
+
+
+            <EditText
+                android:id="@+id/et_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/et_signup1"
+                android:layout_marginTop="@dimen/et_signup2"
+                android:ems="20"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:layout_below="@+id/tv_info"/>
+
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_full_name"
+                android:layout_marginLeft="@dimen/et_signup5"
+                android:layout_marginTop="@dimen/et_signup6"
+                android:ems="20"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:id="@+id/etEyePassword"
+        app:passwordToggleEnabled="true">
+
+
+    <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_email"
+                android:layout_marginLeft="@dimen/et_signup7"
+                android:layout_marginTop="@dimen/et_signup8"
+                android:drawableRight="@drawable/assi_eye"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:hint="@string/password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etEyePassword"
+                android:layout_marginLeft="10dp"
+                android:text="@string/i_agree_to_the_term_and_conditions"/>
+
+            <TextView
+                android:id="@+id/tv_span_register2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tv_login6"
+                android:layout_toRightOf="@+id/cb_1"
+                android:layout_below="@+id/etEyePassword"
+                android:textColor="@color/GreenColor"/>
+
+            <TextView
+                android:id="@+id/tv_span_register1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tv_login6"
+                android:textAlignment="center"
+                android:layout_above="@+id/btn_submit"
+                android:textColor="@color/GreenColor"/>
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_continue"
+                android:layout_alignParentBottom="true"
+                android:text="@string/continue1"
+                android:textColor="@color/GreenColor"/>
+
+
+</RelativeLayout>
+
